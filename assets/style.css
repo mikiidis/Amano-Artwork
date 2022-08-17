@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --color-background: #121212;
+  --color-accent: #971212;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/**Navbar**/
+header {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 50px 0 0 0;
+  z-index: 99;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#navbar {
+  display: fixed;
+  padding-right: 10%;
+}
+
+#logo {
+  margin-right: auto;
+  padding-left: 10%;
+  opacity: 80%;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding-left: 50px;
+  opacity: 80%;
+}
+.nav-list li,
+a {
+  text-decoration: none;
+}
+
+/**First slide**/
+#amano-name {
+  font-size: 40px;
+  padding: 30px 0 0 10%;
+  z-index: 1;
+  position: absolute;
+  text-transform: uppercase;
+}
+
+#amano-name h1 {
+  text-shadow: 2px 2px rgba(48, 48, 48, 0.3);
+}
+
+.ffCard {
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+}
+
+.ffCard-title {
+  position: absolute;
+  font-size: 12px;
+  opacity: 60%;
+  padding: 450px 0 0 815px;
+}
+
+#most-viewed {
+  padding: 500px 0 0 10%;
+}
+
+.view-dot {
+  position: relative;
+  font-size: 40px;
+  color: var(--color-accent);
+}
+
+.most-viewed-text {
+  width: 500px;
+  position: relative;
+  font-size: 12px;
+  left: 50px;
+  top: -30px;
+  font-weight: 500;
+  opacity: 80%;
+}
+
+/**Slide constraint**/
+#slide-const-left {
+  position: relative;
+  opacity: 80%;
+}
+
+.slide-name {
+  position: absolute;
+  padding-left: 10%;
+  font-size: 40px;
+  top: 40px;
+}
+
+.slide-dot {
+  position: relative;
+  top: 32px;
+  padding-left: 380px;
+  font-size: 60px;
+}
+
+.slide-line {
+  width: 70%;
+  float: right;
+}
+
+/**Second slide**/
+#content {
+  padding: 120px 10% 0 10%;
+  width: auto;
+  height: auto;
+}
+
+.content-image {
+  height: 410px;
+  width: 65%;
+  object-fit: cover;
+}
+
+.dark-box {
+  background-color: #4a2629;
+  position: absolute;
+  top: 840px;
+  right: 780px;
+  height: 170px;
+  width: 20px;
+}
+
+.bright-box {
+  background-color: #c3adb0;
+  position: absolute;
+  top: 1080px;
+  right: 780px;
+  height: 170px;
+  width: 20px;
+}
+
+#aside {
+  float: left;
+  width: 50%;
+}
+
+#article {
+  float: right;
+  width: 50%;
+}
+
+.about-title {
+  font-size: 80px;
+  line-height: 120%;
+}
+
+.text-padding {
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.top-pad {
+  padding-top: 50px;
+}
+
+/**Slide constraint**/
+#slide-const-right {
+  position: relative;
+  opacity: 80%;
+}
+
+.slide-name-right {
+  position: absolute;
+  font-size: 40px;
+  margin: 530px 0 0 1050px;
+  opacity: 80%;
+}
+
+.slide-dot-right {
+  position: absolute;
+  top: 32px;
+  margin: 485px 0 0 910px;
+  font-size: 60px;
+}
+
+.slide-line-right {
+  position: relative;
+  top: 142px;
+  margin: 0;
+  width: 69%;
+  opacity: 80%;
+  z-index: -1;
+}
+
+/**Third Slide**/
+#artwork-layout {
+  padding: 0 20% 0 18%;
+}
+
+#flex-container-1 {
+  position: relative;
+  left: 100px;
+  top: 280px;
+  display: flex;
+}
+
+#flex-container-1 > div,
+img {
+  flex-wrap: nowrap;
+}
+
+#artwork-img-1 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+}
+
+#artwork-box-1 {
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+
+.artwork-number-1 {
+  font-size: 32px;
+  padding-top: 0px;
+}
+
+.artwork-title-1 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.artwork-text-1 {
+  font-size: 12px;
+  padding-top: 30px;
+  width: 34%;
+  font-weight: 400;
+}
+
+.artwork-line-1 {
+  margin-top: 26px;
+  width: 220px;
+}
+
+/**Second artwork**/
+#flex-container-2 {
+  position: relative;
+  left: 100px;
+  top: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#flex-container-2 > div,
+img {
+  flex-wrap: nowrap;
+}
+
+#artwork-img-2 {
+  position: relative;
+  height: 200px;
+  width: 660px;
+  object-fit: cover;
+}
+
+#artwork-box-2 {
+  padding-bottom: 0px;
+  padding-left: 20px;
+}
+
+.artwork-number-2 {
+  font-size: 32px;
+  padding-top: 0px;
+}
+
+.artwork-title-2 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 12px;
+  width: 50%;
+}
+
+.artwork-text-2 {
+  font-size: 12px;
+  padding-top: 30px;
+  width: 50%;
+  font-weight: 300;
+}
+
+.artwork-line-2 {
+  margin-top: 26px;
+  width: 220px;
+}
+
+/**Third artwork**/
+#flex-container-3 {
+  position: relative;
+  left: 100px;
+  top: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+#flex-container-3 > div,
+img {
+  flex-wrap: nowrap;
+}
+
+#artwork-img-3 {
+  position: relative;
+  height: 200px;
+  width: 660px;
+  right: 190px;
+  object-fit: cover;
+}
+
+#artwork-box-3 {
+  padding-bottom: 0px;
+}
+
+.artwork-number-3 {
+  font-size: 32px;
+  padding-top: 0px;
+}
+
+.artwork-title-3 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 12px;
+  width: 50%;
+}
+
+.artwork-text-3 {
+  font-size: 12px;
+  padding-top: 20px;
+  width: 48%;
+  font-weight: 300;
+}
+
+.artwork-line-3 {
+  margin-top: 10px;
+  width: 220px;
+}
+
+/**Fourth artwork**/
+#flex-container-4 {
+  position: relative;
+  left: 100px;
+  top: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#flex-container-4 > div,
+img {
+  flex-wrap: nowrap;
+}
+
+#artwork-img-4 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  right: 190px;
+  object-fit: cover;
+}
+
+#artwork-box-4 {
+  padding-bottom: 0px;
+  padding-left: 210px;
+}
+
+.artwork-number-4 {
+  font-size: 32px;
+  padding-top: 0px;
+}
+
+.artwork-title-4 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 12px;
+}
+
+.artwork-text-4 {
+  font-size: 12px;
+  padding-top: 30px;
+  width: 48%;
+  font-weight: 300;
+}
+
+.artwork-line-4 {
+  margin-top: 26px;
+  width: 220px;
+}
+
+/**Slide constraint**/
+#slide-const-left-2 {
+  position: relative;
+  opacity: 80%;
+  top: 320px;
+}
+
+.slide-name-left-2 {
+  position: absolute;
+  padding-left: 10%;
+  font-size: 40px;
+  top: 40px;
+  opacity: 80%;
+}
+
+.slide-dot-left-2 {
+  position: relative;
+  top: 32px;
+  padding-left: 380px;
+  font-size: 60px;
+  opacity: 80%;
+}
+
+.slide-line-left-2 {
+  width: 70%;
+  float: right;
+  opacity: 80%;
+}
+
+/**Fourth Slide**/
